@@ -1,0 +1,71 @@
+.input-comp {
+  margin-bottom: 20px;
+  .MuiOutlinedInput-input {
+    padding: 10px;
+  }
+  .MuiOutlinedInput-root {
+    height: 48px;
+  }
+  .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+    margin-top: -2px;
+  }
+}
+.header-main {
+  border-bottom: 1px solid #8fb8f1;
+  box-shadow: 5px 3px #f4f4f4;
+  .git-repo-heading {
+    display: flex;
+    margin: 25px 40px;
+    align-items: center;
+    justify-content: space-between;
+    .git-repo-header-section {
+      display: flex;
+      align-items: center;
+    }
+    .git-repo-text {
+      margin: 0;
+      padding-left: 10px;
+      color: #3e75c3;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .git-repo-icon {
+      color: #3e75c3;
+      width: 50px;
+    }
+  }
+  .login-logout-btn {
+    background: #3e75c3;
+    padding: 10px 30px;
+    color: #fff;
+    border: 1px solid #3e75c3;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .user-section {
+    display: flex;
+    align-items: center;
+    .user-name {
+      font-size: 18px;
+      font-weight: bold;
+      color: #3e75c3;
+      padding-right: 15px;
+    }
+  }
+}
+
+.card-main {
+  background: #cccccc;
+  padding: 20px;
+  width: 250px;
+  height: 200px;
+  text-align: center;
+  .card-header {
+    font-size: 18px;
+    color: #646464;
+    font-weight: bold;
+    padding-top: 15px;
+  }
+}
