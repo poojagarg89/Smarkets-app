@@ -71,16 +71,16 @@ export default function Home() {
       {loginDetails && (
         <>
           <div className="search-section">
-            <div className="git-repo-search-input">
+            <div className="smarkets-search-input">
               <img
                 src={SearchIcon}
                 alt="search-icon"
-                className="git-repo-search-icon"
+                className="smarkets-search-icon"
               />
               <input
                 onChange={(event) => onSearchChange(event.target.value)}
                 value={searchVal}
-                className="git-repo-search"
+                className="smarkets-search"
                 placeholder="Search by repo Name, Language"
               />
               {searchVal && (
@@ -88,7 +88,7 @@ export default function Home() {
                   src={ClearIcon}
                   alt="clear-icon"
                   onClick={onSearchTextClear}
-                  className="git-repo-search-clear"
+                  className="smarkets-search-clear"
                 />
               )}
             </div>

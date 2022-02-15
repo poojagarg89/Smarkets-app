@@ -1,5 +1,6 @@
 .input-comp {
   margin-bottom: 20px;
+  text-align: center;
   .MuiOutlinedInput-input {
     padding: 10px;
   }
@@ -13,16 +14,16 @@
 .header-main {
   border-bottom: 1px solid #8fb8f1;
   box-shadow: 5px 3px #f4f4f4;
-  .git-repo-heading {
+  .smarkets-heading {
     display: flex;
     margin: 25px 40px;
     align-items: center;
     justify-content: space-between;
-    .git-repo-header-section {
+    .smarkets-header-section {
       display: flex;
       align-items: center;
     }
-    .git-repo-text {
+    .smarkets-text {
       margin: 0;
       padding-left: 10px;
       color: #3e75c3;
@@ -30,7 +31,7 @@
       font-weight: bold;
     }
 
-    .git-repo-icon {
+    .smarkets-icon {
       color: #3e75c3;
       width: 50px;
     }

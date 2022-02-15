@@ -84,11 +84,11 @@ export default function RegisterForm() {
   };
 
   return (
-    <div className="git-repo-login-details">
+    <div className="smarkets-login-details">
       <HeaderComponent />
-      <div className="git-repo-image-form">
-        <img src={loginImage} className="git-repo-login-img" alt="loginImage" />
-        <div className="login-details-form">
+      <div className="smarkets-image-form">
+        {/* <img src={loginImage} className="smarkets-login-img" alt="loginImage" /> */}
+        <div className="register-details-form">
           <div className="login-header-text">Create Account</div>
           <p className="login-sub-text"></p>
 

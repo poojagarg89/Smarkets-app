@@ -46,12 +46,12 @@ export default function LoginForm() {
   };
 
   return (
-    <div className="git-repo-login-details">
+    <div className="smarkets-login-details">
       <HeaderComponent />
-      <div className="git-repo-image-form">
-        <img src={loginImage} className="git-repo-login-img" alt="loginImage" />
+      <div className="smarkets-image-form">
+        {/* <img src={loginImage} className="smarkets-login-img" alt="loginImage" /> */}
         <div className="login-details-form">
-          <div className="login-header-text">Welcome Back :)</div>
+          <div className="login-header-text">Login</div>
           <p className="login-sub-text">
             To keep connected please login with your personal information
             <br /> by email address and password
@@ -79,13 +79,14 @@ export default function LoginForm() {
             inputClass="password-input"
             errorClass="login-error-msg"
           />
-
-          <button className="login-button" onClick={onLoginClick}>
-            Login Now
-          </button>
-          <button className="create-account-button" onClick={onRegisterClick}>
-            Create Account
-          </button>
+          <div className="login-button-css">
+            <button className="login-button" onClick={onLoginClick}>
+              Login Now
+            </button>
+            <button className="create-account-button" onClick={onRegisterClick}>
+              Create Account
+            </button>
+          </div>
           {/* {showLoginForm && this.displayLoginForm()}
           {!showLoginForm && showSecurityForm && this.displaySecurityForm()}
           {!showLoginForm && !showSecurityForm && showChangePassForm && this.displayChangePasswordForm()} */}

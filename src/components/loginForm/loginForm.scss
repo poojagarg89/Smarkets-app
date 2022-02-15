@@ -1,24 +1,41 @@
-.git-repo-login-details {
+.smarkets-login-details {
   overflow-x: hidden;
   overflow-y: hidden;
 
-  .git-repo-image-form {
+  .smarkets-image-form {
     display: flex;
     margin-top: 40px;
-    .git-repo-login-img {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background-image: url("../../assets/welcome-chelt.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .smarkets-login-img {
       width: 780px;
     }
-    .login-details-form {
+    .login-details-form,
+    .register-details-form {
+      border: 1px solid;
+      height: 350px;
+      padding: 20px;
+      margin-top: 50px !important;
       margin: 0 auto;
       font-family: Arial, Helvetica, sans-serif;
       .login-header-text {
         font-size: 30px;
-        color: #566573;
+        color: #fff;
+        text-align: center;
       }
       .login-sub-text {
         padding: 8px 0px 25px 0px;
         font-size: 15px;
-        color: #566573;
+        color: #fff;
+        text-align: center;
+      }
+
+      .login-button-css {
+        text-align: center;
       }
 
       .login-button,
@@ -68,6 +85,10 @@
         font-weight: bold;
         margin-bottom: 10px;
       }
+    }
+
+    .register-details-form {
+      height: 425px;
     }
     .login-here-text {
       color: blue;

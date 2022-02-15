@@ -15,7 +15,7 @@
   .search-section {
     display: flex;
     justify-content: center;
-    .git-repo-search-input {
+    .smarkets-search-input {
       background: #ffffff;
       border: 1px solid #dfe0eb;
       border-radius: 8px;
@@ -25,22 +25,22 @@
       align-items: center;
       margin: 40px 40px 10px;
       width: 400px;
-      .git-repo-search-icon {
+      .smarkets-search-icon {
         cursor: pointer;
         width: 16px;
         height: 16px;
         margin-right: 8px;
       }
-      .git-repo-search {
+      .smarkets-search {
         border: none;
         width: 100%;
         font-size: 16px;
         font-family: "Roboto-Regular";
       }
-      .git-repo-search:focus {
+      .smarkets-search:focus {
         outline: none;
       }
-      .git-repo-search-clear {
+      .smarkets-search-clear {
         cursor: pointer;
         width: 14px;
         height: 14px;

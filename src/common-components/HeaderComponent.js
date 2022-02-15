@@ -20,10 +20,10 @@ export default function HeaderComponent({ showUser, showBackBtn }) {
 
   return (
     <div className="header-main">
-      <div className="git-repo-heading">
-        <div className="git-repo-header-section">
-          <img src={LogoImg} className="git-repo-icon" alt="" />
-          <div className="git-repo-text">Github Domain</div>
+      <div className="smarkets-heading">
+        <div className="smarkets-header-section">
+          <img src={LogoImg} className="smarkets-icon" alt="" />
+          <div className="smarkets-text">Github Domain</div>
         </div>
         <div className="user-section">
           <div className="user-name">{state && state.name}</div>
