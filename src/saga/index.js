@@ -1,8 +1,8 @@
-import { fork } from "redux-saga/effects";
-import getGitRepoListSaga from "./gitRepoListSaga";
+import { fork } from 'redux-saga/effects';
+import getEventListSaga from './GetEventListSaga';
 
 function* sagas() {
-  yield fork(getGitRepoListSaga);
+  yield fork(getEventListSaga);
 }
 
 export default sagas;

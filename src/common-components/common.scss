@@ -12,48 +12,70 @@
   }
 }
 .header-main {
-  border-bottom: 1px solid #8fb8f1;
   box-shadow: 5px 3px #f4f4f4;
-  .smarkets-heading {
-    display: flex;
-    margin: 25px 40px;
-    align-items: center;
-    justify-content: space-between;
-    .smarkets-header-section {
-      display: flex;
-      align-items: center;
-    }
-    .smarkets-text {
-      margin: 0;
-      padding-left: 10px;
-      color: #3e75c3;
-      font-size: 28px;
-      font-weight: bold;
-    }
-
+  background: #242424;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  .header-left-section {
     .smarkets-icon {
-      color: #3e75c3;
-      width: 50px;
+      width: 120px;
     }
   }
-  .login-logout-btn {
-    background: #3e75c3;
-    padding: 10px 30px;
-    color: #fff;
-    border: 1px solid #3e75c3;
-    border-radius: 10px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  .user-section {
+  .header-right-section {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    .user-name {
-      font-size: 18px;
-      font-weight: bold;
-      color: #3e75c3;
-      padding-right: 15px;
+    gap: 20px;
+    .setting-icon,
+    .help-icon {
+      color: #ffffff;
+      padding: 15px;
+      cursor: pointer;
+      font-size: 28px;
     }
+    .setting-icon:hover,
+    .help-icon:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    .log-btn {
+      cursor: pointer;
+      padding: 15px;
+      font-weight: 600;
+      color: #ffffff;
+      font-size: 14px;
+    }
+    .log-btn:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    .create-btn {
+      background-color: #00b073;
+      border-radius: 2px;
+      color: #fff;
+      height: auto;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 5px 12px;
+      border: 1px solid #00b073;
+      cursor: pointer;
+    }
+    .create-btn:hover {
+      background-color: rgba(0, 176, 115, 0.8);
+    }
+  }
+}
+
+.footer-main {
+  color: #888;
+  font-size: 12px;
+  background: #242424;
+  border: 1px solid #242424;
+  padding: 10px 20px;
+  box-shadow: 5px 3px #f4f4f4;
+  text-align: center;
+  .footer-link {
+    color: #00b073;
   }
 }
 

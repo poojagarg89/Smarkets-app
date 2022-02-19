@@ -1,38 +1,18 @@
-import React from "react";
-import LogoImg from "../assets/logo.png";
-import { useNavigate, useLocation } from "react-router-dom";
+import React from 'react';
+import SmarketsLogo from '../assets/smarketsLogo.svg';
+import { SettingsOutlined, HelpOutlined } from '@mui/icons-material';
 
-export default function HeaderComponent({ showUser, showBackBtn }) {
-  const navigate = useNavigate();
-  const { state } = useLocation();
-
-  const onLoginLogoutClick = () => {
-    if (showUser) {
-      navigate("/", { state: { name: null } });
-    } else if (showBackBtn) {
-      navigate("/home", { state: { name: "Pooja Aggarwal" } });
-    } else {
-      navigate("/");
-    }
-  };
-
-  const isLoginUrl = window.location.pathname === "/home";
-
+export default function HeaderComponent() {
   return (
     <div className="header-main">
-      <div className="smarkets-heading">
-        <div className="smarkets-header-section">
-          <img src={LogoImg} className="smarkets-icon" alt="" />
-          <div className="smarkets-text">Github Domain</div>
-        </div>
-        <div className="user-section">
-          <div className="user-name">{state && state.name}</div>
-          {isLoginUrl && (
-            <button className="login-logout-btn" onClick={onLoginLogoutClick}>
-              {showUser ? "Logout" : showBackBtn ? "Back" : "Log In"}
-            </button>
-          )}
-        </div>
+      <div className="header-left-section">
+        <img src={SmarketsLogo} className="smarkets-icon" alt="SmarketsLogo" />
+      </div>
+      <div className="header-right-section">
+        <SettingsOutlined className="setting-icon" />
+        <HelpOutlined className="help-icon" />
+        <div className="log-btn">LOG IN</div>
+        <button className="create-btn">CREATE ACCOUNT</button>
       </div>
     </div>
   );
