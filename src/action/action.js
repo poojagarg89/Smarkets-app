@@ -1,14 +1,14 @@
-import * as types from "./actionTypes";
+import * as types from './actionTypes';
 
-export function getGitRepList() {
+export function getEventIdsAction() {
   return {
-    type: types.GIT_REPO_LIST_REQUEST,
+    type: types.GET_EVENT_ID_REQUEST,
   };
 }
 
-export function updateGitRepList(action) {
+export function getEventDetails(eventIds) {
   return {
-    type: types.GIT_REPO_LIST_UPDATE,
-    action: action,
+    type: types.GET_EVENT_DETAILS_REQUEST,
+    eventIds,
   };
 }

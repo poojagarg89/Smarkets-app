@@ -1,7 +1,9 @@
-import { combineReducers } from "redux";
+import { combineReducers } from 'redux';
 
-import getGitRepoDetails from "./GitRepoListReducer";
+import getEventListIds from './GetEventListReducer';
+import getEventDetails from './GetEventDetails';
 
 export default combineReducers({
-  getGitRepoDetails,
+  getEventListIds,
+  getEventDetails,
 });

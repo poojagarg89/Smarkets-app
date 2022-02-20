@@ -1,10 +1,13 @@
-import axios from "axios";
+import axios from 'axios';
 
-const baseURL = `https://api.github.com/search/repositories`;
+const baseURL = `https://cors-anywhere.herokuapp.com/https://api.smarkets.com`;
 
-const getGitRepList = () => {
-  const URL = `${baseURL}?q=created:>2017-01-10&sort=stars&order=desc`;
+export const getEventIds = () => {
+  const URL = `${baseURL}/v3/popular/event_ids/sport/football/`;
   return axios.get(URL);
 };
 
-export default getGitRepList;
+export const getAllEventDetailsByIds = eventId => {
+  const URL = `${baseURL}/v3/events/${eventId}`;
+  return axios.get(URL);
+};
