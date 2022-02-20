@@ -23,7 +23,13 @@ export default function Home() {
           {eventDetailsData &&
             eventDetailsData.length > 0 &&
             eventDetailsData.map((item, index) => (
-              <CardComponent name={item.name} startTime={item.start_datetime} marketAvailable={index} />
+              <CardComponent
+                name={item.name}
+                id={item.id}
+                startTime={item.start_datetime}
+                marketAvailable={index}
+                {...item}
+              />
             ))}
         </div>
       )}

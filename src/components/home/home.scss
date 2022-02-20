@@ -8,3 +8,26 @@
     width: 130px;
   }
 }
+
+.event-details-main {
+  background: #161616;
+  border: 1px solid #161616;
+  border-radius: 2px;
+  padding: 20px;
+  width: 400px;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 50px auto;
+  color: #ffffff;
+  line-height: 36px;
+  min-height: calc(100vh - 255px);
+  .event-header {
+    color: #a6a6a6;
+  }
+  .match-header {
+    text-align: center;
+    color: #a6a6a6;
+    font-size: 18px;
+    padding-bottom: 12px;
+  }
+}

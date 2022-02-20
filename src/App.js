@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import Store from './store/Store';
 import HeaderComponent from './common-components/HeaderComponent';
 import FooterComponent from './common-components/FooterComponent';
+import EventDetailsComponent from './components/home/EventDetailsComponent';
 
 function App() {
   const urlPath = window.location.pathname;
@@ -22,6 +23,7 @@ function App() {
           {isFlag ? (
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/event-details/:id" element={<EventDetailsComponent />} />
             </Routes>
           ) : (
             <Routes>
