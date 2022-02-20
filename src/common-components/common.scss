@@ -80,15 +80,83 @@
 }
 
 .card-main {
-  background: #cccccc;
-  padding: 20px;
-  width: 250px;
-  height: 200px;
-  text-align: center;
-  .card-header {
-    font-size: 18px;
-    color: #646464;
-    font-weight: bold;
-    padding-top: 15px;
+  background: #161616;
+  border: 1px solid #161616;
+  border-radius: 2px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 900px;
+  height: 74px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  .match-name-section {
+    line-height: 24px;
+    .first-row,
+    .second-row {
+      font-size: 15px;
+      color: #ffffff;
+    }
+    .third-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .match-duration,
+      .match-trade,
+      .match-market,
+      .watch-icon {
+        color: #a6a6a6;
+        font-weight: 700;
+        font-size: 12px;
+      }
+      .match-trade {
+        .match-trade-value {
+          color: #cccc46;
+        }
+      }
+    }
+  }
+
+  .match-score-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .match-score-part {
+      .match-team {
+        color: #fff;
+        font-size: 13px;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 4px;
+      }
+      .match-team-score {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .green-card,
+        .blue-card {
+          background: #00ca84;
+          padding: 5px 14px;
+          color: #ffffff;
+          font-size: 14px;
+          font-weight: 500;
+          text-align: center;
+          border: 1px solid transparent;
+          border-radius: 3px;
+        }
+        .blue-card {
+          background: #006cc0;
+        }
+        .green-card-value,
+        .blue-card-value {
+          font-size: 14px;
+          font-weight: 500;
+          color: #a6a6a6;
+          text-align: center;
+          margin-top: 3px;
+        }
+      }
+    }
   }
 }

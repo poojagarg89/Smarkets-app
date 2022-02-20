@@ -1,68 +1,10 @@
 .home-details {
-  .carousel .slide img {
-    height: 750px;
-  }
-  .card-component-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 25px 40px;
-    flex-wrap: wrap;
-  }
-  .table-details {
-    margin: 25px 40px;
-  }
-  .search-section {
-    display: flex;
-    justify-content: center;
-    .smarkets-search-input {
-      background: #ffffff;
-      border: 1px solid #dfe0eb;
-      border-radius: 8px;
-      padding: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 40px 40px 10px;
-      width: 400px;
-      .smarkets-search-icon {
-        cursor: pointer;
-        width: 16px;
-        height: 16px;
-        margin-right: 8px;
-      }
-      .smarkets-search {
-        border: none;
-        width: 100%;
-        font-size: 16px;
-        font-family: "Roboto-Regular";
-      }
-      .smarkets-search:focus {
-        outline: none;
-      }
-      .smarkets-search-clear {
-        cursor: pointer;
-        width: 14px;
-        height: 14px;
-      }
-    }
-  }
-
-  .subscribe-btn-section {
-    text-align: end;
-    margin: 5px 40px 0px;
-    .subscribe-btn {
-      color: #fff;
-      padding: 12px 40px;
-      background: blue;
-      border: 1px solid blue;
-      border-radius: 10px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-  }
+  padding: 50px 0px 35px 0px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - 210px);
   .loader-img {
-    position: absolute;
-    left: 50%;
+    width: 130px;
   }
 }
