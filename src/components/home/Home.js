@@ -7,11 +7,9 @@ import LoaderImg from '../../assets/loader.svg';
 export default function Home() {
   const dispatch = useDispatch();
   const eventDetails = useSelector(state => state.getEventDetails);
-  // const eventIdDetails = useSelector(state => state.getEventListIds);
   const isFetching = eventDetails && eventDetails.isFetching;
-  console.log({ isFetching });
   const eventDetailsData = eventDetails?.eventDetails?.events;
-  console.log({ eventDetailsData });
+
   useEffect(() => {
     dispatch(getEventIdsAction());
   }, [dispatch]);
